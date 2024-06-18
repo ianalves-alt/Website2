@@ -345,21 +345,7 @@ text-align: center;
 
   
 }
-@media screen and (max-width: 450px) {
-  .heroOa h1{
-    font-size: 5rem;
-    position: relative;
-    left: 0.9rem;
-  }
-  .heroOa p{
-    left: 0.8rem;
-  }
-  .hero-button{
-    margin-left: 9.7rem;
-  }
-  
-}
-@media (max-width: 470px) {
+@media (max-width: 550px) {
   *{
     overflow-x: hidden;
   }
