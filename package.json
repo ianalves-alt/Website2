@@ -1,5 +1,4 @@
 {
-  "homepage": "https://ianalves-alt.github.io/Website2/",
   "name": "proj1",
   "private": true,
   "version": "0.0.0",
@@ -12,6 +11,8 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+
+  "homepage": "https://ianalves-alt.github.io/Website2/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
@@ -28,6 +29,7 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "gh-pages": "^6.1.1",
     "vite": "^5.2.0"
   }
 }
