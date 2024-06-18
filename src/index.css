@@ -11,13 +11,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body{
+  overflow-x: hidden;
 }
 .navigation-bar{
   display: flex;
-  justify-content: space-around;
-} 
+  justify-content: space-between;
+  padding-top: 1rem;
+
+}
+.navigation-bar *{
+  margin-inline: 4rem;
+
+}
 .login{
   flex: 0 0 auto; /* Prevent the button from growing or shrinking */
   padding: 0.7rem 2.3rem;
@@ -27,11 +32,15 @@ body{
 }
 .navigation-bar h1{
   font-size: 3rem;
+  letter-spacing: 2px;
+  font-family: "Playfair Display";
+  min-width: 114px;
 }
 .heroOa{
   min-height: 80vh;
   display: flex;
   flex-direction: column;
+  padding: 0.2rem;
   
 }
 .heroOa h1{
@@ -222,6 +231,7 @@ text-align: center;
   font-family: 'Poppins';
   margin-top: 2rem;
 }
+/* MEDIA QUERIES */
 @media (max-width: 1000px) {
   .hero-button{
     margin-bottom: 10rem;
@@ -247,10 +257,6 @@ text-align: center;
 @media (max-width: 763px) {
   .heroOa h1{
     padding-top: 5rem;
-  }
-  .heroOa p{
-    position: relative;
-    left: 1rem;
   }
   .heroOa button{
     position: relative;
@@ -350,6 +356,30 @@ text-align: center;
   }
   .hero-button{
     margin-left: 9.7rem;
+  }
+  
+}
+@media (max-width: 470px) {
+  *{
+    overflow-x: hidden;
+  }
+  .heroOa h1{
+    font-size: 5rem;
+  }
+  .heroOa button{
+    position: static;
+  }
+  .container div p{
+    min-width: 200px;
+  }
+  .container{
+    grid-template-columns: 1fr;
+    
+  }
+  .hero-subtitle{
+    position: relative;
+    
+
   }
   
 }
